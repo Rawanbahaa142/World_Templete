@@ -1,0 +1,133 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f0f0f0;
+}
+
+:root {
+  --text-color: #333;
+  --paragraph-color: #666;
+  --blue-color: #007bff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+/* Header Styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  z-index: 1000;
+  background-color:black;
+  backdrop-filter: blur(5px);
+}
+
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+    color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+
+/* Interface Section */
+.interface {
+  position: relative;
+  height: 80vh;
+background-image: linear-gradient(rgba(0,0,0,0.7),    rgba(0,0,0,0.7)), url("../images/urban-life-architecture-city-building.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 50px;
+  margin-top: 60px;
+}
+
+/* Indicators */
+.carousel {
+  display: flex;
+  gap: 50px;
+  color: #ccc;
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.indicator.active {
+  opacity: 1;
+  font-weight: bold;
+  color: white;
+}
+
+.circle {
+  border: 3px solid gray;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.indicator.active .circle {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+}
