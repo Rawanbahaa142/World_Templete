@@ -1,4 +1,3 @@
-/* Reset Styles */
 * {
   margin: 0;
   padding: 0;
@@ -58,13 +57,14 @@ h6 {
   line-height: 1.3;
 
 }
-hr{
+
+hr {
   border: 0;
   height: 1px;
   background: var(--border-color);
   margin: 10px 0;
   width: 100%;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Header Styles */
@@ -388,4 +388,96 @@ header {
   color: var(--blue-color);
 }
 
+.control-icon {
+  margin: 35px 0;
+  font-size: 26px;
+  color: var(--border-color);
+  overflow: hidden;
+
+}
+
+.control-icon .left,
+.control-icon .right {
+  border-radius: 50%;
+  padding: 5px;
+  border: 2px solid var(--border-color);
+
+  &:hover {
+    color: var(--background-color);
+    background-color: var(--blue-color);
+  }
+
+}
+
+.left-card .top-story-item {
+  margin: 20px 0;
+
+}
+
+
+
+             /* 3 horizontal Cards */
+  .hor-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    align-items:center;
+}
+
+.hor-card .card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-image: url('../images/hor-card.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    position: relative;
+    min-height: 200px; 
+    &.seconed{
+      background-image: url('../images/hor-card2.jpg'); 
+    }
+    & h3 {
+      font-size: 1em;
+      margin: 10px;
+      color: var(--background-color);
+      z-index: 2;
+      position: relative;
+  }
+  & .author-date {
+    font-size: 0.9em;
+    color: #858585;
+    margin: 20px 0;
+    z-index: 2;
+    position: relative;
+}
+}
+
+.hor-card .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(128, 128, 128, 0.2); 
+    z-index: 1;
+}
+
+.hor-card .category-tag {
+    display: inline-block;
+    background-color: #fff;
+    padding: 5px 5px;
+    border-radius: 3px;
+    margin: 10px;
+    color: var(--blue-color);
+    position: relative;
+    z-index: 2;
+    font-size:12px;
+}
 
