@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="stylesheet" href="CSS/media.css" />
+  <link rel="stylesheet" href="CSS/animation.css" />
   <link rel="stylesheet" href="CSS/all.min.css" />
 </head>
 
@@ -15,6 +16,9 @@
   <header>
     <nav class="navbar d-flex justify-content-between align-items-center">
       <div class="logo">WORLD</div>
+      <div class="bar-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <ul class="nav-links">
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#">Pages </a></li>
@@ -72,8 +76,8 @@
           </ul>
         </div>
 
-        <div class="card-container">
-          <div class="left-card">
+        <div class="card-container animate">
+          <div class="left-card miss">
             <img src="./images/b3.jpg" alt="Travel Article">
             <span class="category-tag">TRAVEL</span>
             <h3>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h3>
@@ -136,15 +140,37 @@
             <li><a href="#">More▼</a></li>
           </ul>
         </div>
-        <!-- Two Big Cards ---- Section (Tending) -->
-        <div class="card-container">
+        <!-- Section (Tending) -->
+        <div class="card-container animate">
           <div class="left-card">
+            <div class="top-card">
             <img src="./images/b2.jpg" alt="Travel Article">
             <span class="category-tag">TRAVEL</span>
             <h3>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h3>
             <p>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in...</p>
             <span class="author-date"><a href="#"><span class="author-link">Katy Liu</span></a> on Sep 29, 2017 at 9:48
               am</span>
+            </div>
+            <div class="right-cards">
+              <div class="top-stories-list gap-5">
+                <div class="top-story-item trend">
+                  <img src="./images/b10.jpg" alt="Van Gogh's Turbulent Mind">
+                  <div class="top-story-text">
+                    <h4>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h4>
+                    <span class="para"><a href="#"><span class="author-link">Katy Liu</span></a> on Sep 29, 2017 at 9:48
+                      am</span>
+                  </div>
+                </div>
+                <div class="top-story-item trend">
+                  <img src="./images/b11.jpg" alt="Van Gogh's Turbulent Mind">
+                  <div class="top-story-text">
+                    <h4>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h4>
+                    <span class="para"><a href="#"><span class="author-link">Katy Liu</span></a> on Sep 29, 2017 at 9:48
+                      am</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="left-card">
             <div class="top-card">
@@ -155,6 +181,26 @@
               <span class="author-date"><a href="#"><span class="author-link">Katy Liu</span></a> on Sep 29, 2017 at
                 9:48
                 am</span>
+            </div>
+            <div class="right-cards">
+              <div class="top-stories-list gap-5">
+                <div class="top-story-item trend">
+                  <img src="./images/b13.jpg" alt="Van Gogh's Turbulent Mind">
+                  <div class="top-story-text">
+                    <h4>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h4>
+                    <span class="para"><a href="#"><span class="author-link">Katy Liu</span></a> on Sep 29, 2017 at 9:48
+                      am</span>
+                  </div>
+                </div>
+                <div class="top-story-item trend">
+                  <img src="./images/sea.webp" alt="Van Gogh's Turbulent Mind">
+                  <div class="top-story-text">
+                    <h4>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h4>
+                    <span class="para"><a href="#"><span class="author-link">Katy Liu</span></a> on Sep 29, 2017 at 9:48
+                      am</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -167,7 +213,7 @@
 
       </div>
       <!-- About Worls Section -->
-      <div class="about-world-section">
+      <div class="about-world-section animate">
         <h2>About World</h2>
         <hr>
         <p>The mango is perfect in that it is always yellow and if it's not, I don't want to hear about it. The mango's
@@ -224,7 +270,7 @@
 
     </div>
     <!-- Horizontal Cards -->
-    <div class="hor-card">
+    <div class="hor-card animate">
       <div class="card">
         <span class="category-tag">TRAVEL</span>
         <h3>How Did van Gogh's Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h3>
@@ -244,7 +290,7 @@
     <section class="articles-section">
       <div class="container">
         <!-- Left Side -->
-        <div class="latest-articles">
+        <div class="latest-articles animate">
           <h3>Latest Articles</h3>
 
           <div class="article-card">
